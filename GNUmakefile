@@ -9,3 +9,8 @@ PREFIX ?= /usr
 install-alacritty-theme:
 	install -Dm644 -t $(DESTDIR)/$(PREFIX)/share/selenized/alacritty/ \
 		terminals/alacritty/*.toml
+
+.PHONY: install-vim-colors
+install-vim-colors:
+	install -Dm644 -t $(DESTDIR)/$(PREFIX)/share/vim/vimfiles/colors/ \
+		editors/vim/colors/*.vim
