@@ -7,5 +7,5 @@ PREFIX ?= /usr
 
 .PHONY: install-alacritty-theme
 install-alacritty-theme:
-	install -Dm644 -t $(DESTDIR)/$(PREFIX)/share/alacritty/themes/ \
+	install -Dm644 -t $(DESTDIR)/$(PREFIX)/share/selenized/alacritty/ \
 		terminals/alacritty/*.toml
