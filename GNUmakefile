@@ -5,6 +5,9 @@
 DESTDIR ?=
 PREFIX ?= /usr
 
+.PHONY: all
+all: install-alacritty-theme install-vim-colors
+
 .PHONY: install-alacritty-theme
 install-alacritty-theme:
 	install -Dm644 -t $(DESTDIR)/$(PREFIX)/share/selenized/alacritty/ \
